@@ -3,7 +3,7 @@ package com.xurxodev.unittestpatterns;
 public class Product {
     String title;
     Money price ;
-    boolean onSale;
+    boolean onSale = false;
 
     public Product(String title) {
         if (title == null || title.isEmpty()) throw new IllegalArgumentException("title is required");
